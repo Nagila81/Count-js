@@ -1,5 +1,9 @@
 html, body {
     height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    color: #333;
 }
 
 body {
@@ -7,5 +11,57 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
+}
+
+#count {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #222;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0,3s ease-in-out;
+}
+
+#decrement {
+    background: #ff6b6b;
+    color: white;
+}
+
+#decrement {
+    background: #e63946;
+}
+
+#reset {
+    background: #feca57;
+    color: #222;
+}
+#reset:hover {
+    background: #ffb142;
+}
+
+#increment {
+    background: #1dd1a1;
+    color: white;
+}
+#increment:hover {
+    background: #10ac84;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }

@@ -8,7 +8,17 @@ let numero = 0;
 
 contador.innerText = numero;
 
-decrementar.addEventListener('click', ( => {
+decrementar.addEventListener('click', () => {
     numero = numero - 1;
     contador.innerText = numero;
-}));
+});
+
+resetar.addEventListener('click', () => {
+    numero = 0;
+    contador.innerText = numero;
+});
+
+incrementar.addEventListener('click', () => {
+    numero = numero + 1;
+    contador.innerText = numero;
+});
